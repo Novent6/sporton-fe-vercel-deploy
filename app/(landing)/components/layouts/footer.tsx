@@ -1,0 +1,48 @@
+import Image from "next/image";
+import Link from "next/link";
+
+const Footer = () => {
+    return <footer className="bg-dark-alternate">
+        <div className="container mx-auto flex justify-between mt-52 pt-14 pb-24 text-white">
+            <div className="w-105">
+                <Image src="/image/logo-white.svg" 
+                alt="logo sporton footer" 
+                width={187} 
+                height={44}/>
+                <p className="text-white mt-8">
+                    Engineered for endurance and designed for speed.  Experience gear that moves as fast as you do.
+                </p>
+            </div>
+            <div className="w-105 grid grid-cols-2">
+                <div className="flex gap-7 flex-col">
+                    <Link href="#">Home</Link>
+                    <Link href="#">Categories</Link>
+                    <Link href="#">Products</Link>
+                    <Link href="#">About us</Link>
+                </div>
+                <div className="flex gap-7 flex-col">
+                    <Link href="#">Instagram</Link>
+                    <Link href="#">Facebook</Link>
+                    <Link href="#">TikTok</Link>
+                    <Link href="#">Youtube</Link>
+                </div>
+            </div>
+        </div>
+        <div className="border-t border-t-white/15 text-white">
+            <div className="container mx-auto py-6.5 flex justify-between">
+            <div>SportsOn © 2025 All Rights Reserverd.</div>
+            <div className="w-105 grid grid-cols-2">
+                <div className="flex gap-7 flex-col">
+                    <Link href="#">Privacy Policy</Link>
+                </div>
+                <div className="flex gap-7 flex-col">
+                    <Link href="#">Terms Conditions</Link>
+                </div>
+            </div>
+        </div>
+            
+        </div>
+    </footer>
+}
+
+export default Footer;
