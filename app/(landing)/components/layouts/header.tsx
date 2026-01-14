@@ -8,7 +8,7 @@ const Header = () => {
     <header>
     <div className="flex justify-between gap-10 container mx-auto py-7">
       <Image
-        src="/image/logo.svg"
+        src="/image/Logo.svg"
         alt="sporton logo"
         width={128}
         height={30}
